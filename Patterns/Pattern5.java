@@ -35,3 +35,5 @@ class Pattern5 {
         sc.close();
     }
 }
+
+
