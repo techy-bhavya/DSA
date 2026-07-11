@@ -2,6 +2,19 @@ import java.util.Scanner;
 
 class Questions {
 
+    public static int search(int[] arr, int x){
+        if(arr==null || arr.length==0)
+            return -1;
+        
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==x){
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
     public static int findSpan(int[] arr){
         if(arr.length==0){
             return -1;
@@ -54,6 +67,7 @@ class Questions {
 
         System.out.println("Number of elements greater than x: " + res);
         System.out.println("Span of the array: " + findSpan(arr));
+        System.out.println("Index of x in the array: " + search(arr, x));
         scn.close();
     }
 }
